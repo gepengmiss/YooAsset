@@ -109,6 +109,9 @@ namespace YooAsset.Editor
 			// 冗余资源列表
 			buildReport.RedundancyInfos = new List<ReportRedundancyInfo>(buildMapContext.RedundancyInfos);
 
+			// 被间接引用一次打包进某bundle的资源列表
+			buildReport.IndrectBundleInfos = new List<ReportBundleInfo>(buildMapContext.InDirectABInfos);
+
 			// 序列化文件
 			string fileName = YooAssetSettingsData.GetReportFileName(buildParameters.PackageName, buildParameters.PackageVersion);
 			string filePath = $"{packageOutputDirectory}/{fileName}";

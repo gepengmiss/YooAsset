@@ -181,12 +181,19 @@ namespace YooAsset.Editor
 				if (_referenceBundleNames.Count > 1)
 				{
 					PackRuleResult packRuleResult = sharedPackRule.GetPackRuleResult(AssetPath);
-					BundleName = packRuleResult.GetShareBundleName(packageName, uniqueBundleName);
+					BundleName = packRuleResult.GetShareBundleName(packageName, uniqueBundleName); 
 				}
 				else
 				{
 					// 注意：被引用次数小于1的资源不需要设置资源包名称
 					BundleName = string.Empty;
+
+					if (_referenceBundleNames.Count == 1)
+					{
+						 
+					} else {
+						UnityEngine.Debug.Log("==2>> 被动引用=1的资源   AssetPath: " + AssetPath);
+					} 
 				}
 			}
 		}
@@ -196,8 +203,8 @@ namespace YooAsset.Editor
 		/// </summary>
 		public bool IsRedundancyAsset()
 		{
-			if (HasBundleName())
-				return false;
+			// if (HasBundleName())
+			// 	return false;
 
 			return _referenceBundleNames.Count > 1;
 		}
@@ -208,6 +215,16 @@ namespace YooAsset.Editor
 		public int GetReferenceBundleCount()
 		{
 			return _referenceBundleNames.Count;
+		}
+
+		public string GetReferenceBundleFirstValue()
+		{ 
+			return _referenceBundleNames.ElementAt(0);
+		}
+
+		public HashSet<string> GetReferenceBundleValues()
+		{ 
+			return _referenceBundleNames;
 		}
 	}
 }

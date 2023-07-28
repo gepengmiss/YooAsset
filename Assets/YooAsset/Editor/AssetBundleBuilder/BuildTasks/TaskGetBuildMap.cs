@@ -108,7 +108,7 @@ namespace YooAsset.Editor
 
 			// 9. 记录冗余资源
 			foreach (var buildAssetInfo in allBuildAssetInfoDic.Values)
-			{
+			{ 
 				if (buildAssetInfo.IsRedundancyAsset())
 				{
 					var redundancyInfo = new ReportRedundancyInfo();
@@ -117,21 +117,55 @@ namespace YooAsset.Editor
 					redundancyInfo.AssetGUID = AssetDatabase.AssetPathToGUID(buildAssetInfo.AssetPath);
 					redundancyInfo.FileSize = FileUtility.GetFileSize(buildAssetInfo.AssetPath);
 					redundancyInfo.Number = buildAssetInfo.GetReferenceBundleCount();
+					redundancyInfo.TempABName = buildAssetInfo.BundleName;
 					context.RedundancyInfos.Add(redundancyInfo);
-				}
+ 				}
 			}
 
-			// 10. 移除不参与构建的资源
+			// 10. 移除不参与构建的资源，并构建这些资源的bundle，仅供editor模型分析资源目录合理性使用
 			List<BuildAssetInfo> removeBuildList = new List<BuildAssetInfo>();
 			foreach (var buildAssetInfo in allBuildAssetInfoDic.Values)
 			{
 				if (buildAssetInfo.HasBundleName() == false)
 					removeBuildList.Add(buildAssetInfo);
 			}
+
+			Dictionary<string, ReportBundleInfo> tempInDirectABDict = new Dictionary<string, ReportBundleInfo>();
 			foreach (var removeValue in removeBuildList)
-			{
+			{  
+				{
+					ReportBundleInfo reportBundleInfo = null;
+					string assetPath = removeValue.AssetPath;
+					string abName = removeValue.GetReferenceBundleFirstValue();
+
+					if (tempInDirectABDict.ContainsKey(abName))
+					{
+						reportBundleInfo = tempInDirectABDict[abName];
+					} else {
+						reportBundleInfo = new ReportBundleInfo();
+						reportBundleInfo.BundleName = abName; 
+						reportBundleInfo.FileName = abName;
+						reportBundleInfo.FileHash = "";
+						reportBundleInfo.FileCRC = "";
+						reportBundleInfo.FileSize = 0;
+						reportBundleInfo.IsRawFile = false;
+						reportBundleInfo.LoadMethod = EBundleLoadMethod.Normal;
+						reportBundleInfo.Tags = new string[] {};
+						reportBundleInfo.ReferenceIDs = new int[] {};
+						reportBundleInfo.AllBuiltinAssets = new List<string>();
+
+						tempInDirectABDict.Add(abName, reportBundleInfo);
+					}
+				  	reportBundleInfo.AllBuiltinAssets.Add(assetPath); 
+					reportBundleInfo.FileSize += 1; 
+				}
+
 				allBuildAssetInfoDic.Remove(removeValue.AssetPath);
 			}
+			foreach(var kv in tempInDirectABDict)
+			{
+				context.InDirectABInfos.Add(kv.Value);
+			} 
 
 			// 11. 构建资源列表
 			var allPackAssets = allBuildAssetInfoDic.Values.ToList();
@@ -157,13 +191,14 @@ namespace YooAsset.Editor
 					break;
 				}
 			}
+			 
 			if (hasAnyDependCollector == false)
 				return;
 
 			// 2. 获取所有主资源的依赖资源集合
 			HashSet<string> allDependAsset = new HashSet<string>();
 			foreach (var collectAssetInfo in allCollectAssetInfos)
-			{
+			{ 
 				var collectorType = collectAssetInfo.CollectorType;
 				if (collectorType == ECollectorType.MainAssetCollector || collectorType == ECollectorType.StaticAssetCollector)
 				{

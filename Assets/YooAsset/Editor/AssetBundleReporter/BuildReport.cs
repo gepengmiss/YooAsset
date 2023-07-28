@@ -31,8 +31,12 @@ namespace YooAsset.Editor
 		/// 冗余的资源列表
 		/// </summary>
 		public List<ReportRedundancyInfo> RedundancyInfos = new List<ReportRedundancyInfo>();
-		
 
+		/// <summary>
+		/// 被间接引用一次打包进某bundle的资源列表 
+		/// </summary>
+		public List<ReportBundleInfo> IndrectBundleInfos = new List<ReportBundleInfo>();
+		 
 		/// <summary>
 		/// 获取资源包信息类
 		/// </summary>

@@ -32,5 +32,10 @@ namespace YooAsset.Editor
 		/// 冗余的资源包数量
 		/// </summary>
 		public int Number;
+
+		/// <summary>
+		/// 资源临时ab
+		/// </summary>
+		public string TempABName;
 	}
 }

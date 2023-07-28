@@ -9,11 +9,16 @@ namespace YooAsset.Editor
 	public class BuildMapContext : IContextObject
 	{
 		private readonly Dictionary<string, BuildBundleInfo> _bundleInfoDic = new Dictionary<string, BuildBundleInfo>(10000);
+ 
+		/// <summary>
+		/// 意外引用一次的资源，会被打进某个bundle，单独统计出来
+		/// </summary>
+		public readonly List<ReportBundleInfo> InDirectABInfos = new List<ReportBundleInfo>(1000);
 
 		/// <summary>
 		/// 冗余的资源列表
 		/// </summary>
-		public readonly List<ReportRedundancyInfo> RedundancyInfos= new List<ReportRedundancyInfo>(1000);
+		public readonly List<ReportRedundancyInfo> RedundancyInfos = new List<ReportRedundancyInfo>(1000);
 		
 		/// <summary>
 		/// 参与构建的资源总数

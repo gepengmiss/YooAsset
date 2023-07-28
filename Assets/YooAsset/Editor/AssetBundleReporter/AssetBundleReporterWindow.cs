@@ -40,13 +40,19 @@ namespace YooAsset.Editor
 			/// 冗余资源试图
 			/// </summary>
 			Redundancy,
+ 
+			/// <summary>
+			/// 间接进ab资源试图
+			/// </summary>
+			IndirectABAsset,
 		}
 
 		private ToolbarMenu _viewModeMenu;
 		private ReporterSummaryViewer _summaryViewer;
 		private ReporterAssetListViewer _assetListViewer;
 		private ReporterBundleListViewer _bundleListViewer;
-		private ReporterRedundancyListViewer _redundancyListViewer;
+		private ReporterRedundancyListViewer _redundancyListViewer; 
+		private ReporterIndirectBundleListViewer _inDirectAbResListViewer;
 
 		private EViewMode _viewMode;
 		private BuildReport _buildReport;
@@ -76,7 +82,8 @@ namespace YooAsset.Editor
 				_viewModeMenu.menu.AppendAction(EViewMode.Summary.ToString(), ViewModeMenuAction0, ViewModeMenuFun0);
 				_viewModeMenu.menu.AppendAction(EViewMode.AssetView.ToString(), ViewModeMenuAction1, ViewModeMenuFun1);
 				_viewModeMenu.menu.AppendAction(EViewMode.BundleView.ToString(), ViewModeMenuAction2, ViewModeMenuFun2);
-				_viewModeMenu.menu.AppendAction(EViewMode.Redundancy.ToString(), ViewModeMenuAction3, ViewModeMenuFun3);
+				_viewModeMenu.menu.AppendAction("Res冗余", ViewModeMenuAction3, ViewModeMenuFun3);
+				_viewModeMenu.menu.AppendAction("Res间接打进ab", ViewModeMenuAction4, ViewModeMenuFun4); 
 
 				// 搜索栏
 				var searchField = root.Q<ToolbarSearchField>("SearchField");
@@ -97,6 +104,11 @@ namespace YooAsset.Editor
 				// 加载试图
 				_redundancyListViewer = new ReporterRedundancyListViewer();
 				_redundancyListViewer.InitViewer();
+  
+				// 加载视图
+				_inDirectAbResListViewer = new ReporterIndirectBundleListViewer();
+				_inDirectAbResListViewer.InitViewer();
+				
 
 				// 显示视图
 				_viewMode = EViewMode.Summary;
@@ -125,7 +137,8 @@ namespace YooAsset.Editor
 			_summaryViewer.FillViewData(_buildReport);
 			_assetListViewer.FillViewData(_buildReport, _searchKeyWord);
 			_bundleListViewer.FillViewData(_buildReport, _reportFilePath, _searchKeyWord);
-			_redundancyListViewer.FillViewData(_buildReport, _searchKeyWord);
+			_redundancyListViewer.FillViewData(_buildReport, _searchKeyWord); 
+			_inDirectAbResListViewer.FillViewData(_buildReport, _searchKeyWord);
 		}
 		private void OnSearchKeyWordChange(ChangeEvent<string> e)
 		{
@@ -147,6 +160,7 @@ namespace YooAsset.Editor
 				_assetListViewer.DetachParent();
 				_bundleListViewer.DetachParent();
 				_redundancyListViewer.DetachParent();
+				_inDirectAbResListViewer.DetachParent(); 
 			}
 		}
 		private void ViewModeMenuAction1(DropdownMenuAction action)
@@ -160,6 +174,7 @@ namespace YooAsset.Editor
 				_assetListViewer.AttachParent(root);
 				_bundleListViewer.DetachParent();
 				_redundancyListViewer.DetachParent();
+				_inDirectAbResListViewer.DetachParent(); 
 			}
 		}
 		private void ViewModeMenuAction2(DropdownMenuAction action)
@@ -173,6 +188,7 @@ namespace YooAsset.Editor
 				_assetListViewer.DetachParent();
 				_bundleListViewer.AttachParent(root);
 				_redundancyListViewer.DetachParent();
+				_inDirectAbResListViewer.DetachParent(); 
 			}
 		}
 		private void ViewModeMenuAction3(DropdownMenuAction action)
@@ -181,13 +197,29 @@ namespace YooAsset.Editor
 			{
 				_viewMode = EViewMode.Redundancy;
 				VisualElement root = this.rootVisualElement;
-				_viewModeMenu.text = EViewMode.Redundancy.ToString();
+				_viewModeMenu.text = "Res冗余";
 				_summaryViewer.DetachParent();
 				_assetListViewer.DetachParent();
 				_bundleListViewer.DetachParent();
 				_redundancyListViewer.AttachParent(root);
+				_inDirectAbResListViewer.DetachParent(); 
 			}
 		}
+		private void ViewModeMenuAction4(DropdownMenuAction action)
+		{
+			if (_viewMode != EViewMode.IndirectABAsset)
+			{
+				_viewMode = EViewMode.IndirectABAsset;
+				VisualElement root = this.rootVisualElement;
+				_viewModeMenu.text = "Res间接打进ab";
+				_summaryViewer.DetachParent();
+				_assetListViewer.DetachParent();
+				_bundleListViewer.DetachParent();
+				_redundancyListViewer.DetachParent();
+				_inDirectAbResListViewer.AttachParent(root);  
+			}
+		}
+	 
 		private DropdownMenuAction.Status ViewModeMenuFun0(DropdownMenuAction action)
 		{
 			if (_viewMode == EViewMode.Summary)
@@ -212,6 +244,13 @@ namespace YooAsset.Editor
 		private DropdownMenuAction.Status ViewModeMenuFun3(DropdownMenuAction action)
 		{
 			if (_viewMode == EViewMode.Redundancy)
+				return DropdownMenuAction.Status.Checked;
+			else
+				return DropdownMenuAction.Status.Normal;
+		}
+		private DropdownMenuAction.Status ViewModeMenuFun4(DropdownMenuAction action)
+		{
+			if (_viewMode == EViewMode.IndirectABAsset)
 				return DropdownMenuAction.Status.Checked;
 			else
 				return DropdownMenuAction.Status.Normal;
