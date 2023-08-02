@@ -138,6 +138,8 @@ namespace YooAsset.Editor
 					string assetPath = removeValue.AssetPath;
 					string abName = removeValue.GetReferenceBundleFirstValue();
 
+					// UnityEngine.Debug.LogError("==3 >> include 1次的资源   abName: " + abName + " assetPath: " + assetPath);
+
 					if (tempInDirectABDict.ContainsKey(abName))
 					{
 						reportBundleInfo = tempInDirectABDict[abName];
@@ -153,7 +155,6 @@ namespace YooAsset.Editor
 						reportBundleInfo.Tags = new string[] {};
 						reportBundleInfo.ReferenceIDs = new int[] {};
 						reportBundleInfo.AllBuiltinAssets = new List<string>();
-
 						tempInDirectABDict.Add(abName, reportBundleInfo);
 					}
 				  	reportBundleInfo.AllBuiltinAssets.Add(assetPath); 
@@ -161,6 +162,47 @@ namespace YooAsset.Editor
 				}
 
 				allBuildAssetInfoDic.Remove(removeValue.AssetPath);
+			}
+			foreach (var buildAssetInfo in allBuildAssetInfoDic.Values) // 冗余资源和shader都属于include类型 
+			{ 
+				if (buildAssetInfo.BundleName.StartsWith("share_") || buildAssetInfo.IsShaderAsset)
+				{
+					// UnityEngine.Debug.LogError("==4 >> include 1次的资源   abName: " + buildAssetInfo.BundleName 
+					// + " AssetPath:" + buildAssetInfo.AssetPath 
+					// + " AssetGUID: " + buildAssetInfo.AssetGUID
+					// + " CollectorType: " + buildAssetInfo.CollectorType //= ECollectorType.None
+					// );
+
+					// foreach(var v in buildAssetInfo.GetReferenceBundleValues())
+					// {
+					// 	UnityEngine.Debug.Log("================ >> v: " + v);
+					// }
+					if (buildAssetInfo.CollectorType == ECollectorType.None)
+					{
+						ReportBundleInfo reportBundleInfo = null;
+						string assetPath = buildAssetInfo.AssetPath;
+						string abName = buildAssetInfo.BundleName;
+						if (tempInDirectABDict.ContainsKey(abName))
+						{
+							reportBundleInfo = tempInDirectABDict[abName];
+						} else {
+							reportBundleInfo = new ReportBundleInfo();
+							reportBundleInfo.BundleName = abName; 
+							reportBundleInfo.FileName = abName;
+							reportBundleInfo.FileHash = "";
+							reportBundleInfo.FileCRC = "";
+							reportBundleInfo.FileSize = 0;
+							reportBundleInfo.IsRawFile = false;
+							reportBundleInfo.LoadMethod = EBundleLoadMethod.Normal;
+							reportBundleInfo.Tags = new string[] {};
+							reportBundleInfo.ReferenceIDs = new int[] {};
+							reportBundleInfo.AllBuiltinAssets = new List<string>();
+							tempInDirectABDict.Add(abName, reportBundleInfo);
+						}
+						reportBundleInfo.AllBuiltinAssets.Add(assetPath); 
+						reportBundleInfo.FileSize += 1;   
+					} 
+				}
 			}
 			foreach(var kv in tempInDirectABDict)
 			{
@@ -225,7 +267,7 @@ namespace YooAsset.Editor
 			// 4. 移除所有零引用的依赖资源
 			foreach (var removeValue in removeList)
 			{
-				BuildLogger.Log($"发现未被依赖的资源并自动移除 : {removeValue.AssetPath}");
+				BuildLogger.Log($"-------------发现未被依赖的资源并自动移除 : {removeValue.AssetPath}");
 				allCollectAssetInfos.Remove(removeValue);
 			}
 		}

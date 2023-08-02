@@ -166,7 +166,7 @@ namespace YooAsset.Editor
 		/// </summary>
 		public void CalculateShareBundleName(ISharedPackRule sharedPackRule, bool uniqueBundleName, string packageName, string shadersBundleName)
 		{
-			if (CollectorType != ECollectorType.None)
+			if (CollectorType != ECollectorType.None) // 表示主动打包资源，不是include类型
 				return;
 
 			if (IsRawAsset)
@@ -185,14 +185,14 @@ namespace YooAsset.Editor
 				}
 				else
 				{
-					// 注意：被引用次数小于1的资源不需要设置资源包名称
+					// 注意：被引用次数小于等于1的资源不需要设置资源包名称
 					BundleName = string.Empty;
 
 					if (_referenceBundleNames.Count == 1)
 					{
-						 
+						// UnityEngine.Debug.Log("==1 >> include 1次的资源   AssetPath: " + AssetPath);
 					} else {
-						UnityEngine.Debug.Log("==2>> 被动引用=1的资源   AssetPath: " + AssetPath);
+						UnityEngine.Debug.Log("==2 error>> include 0次的资源   AssetPath: " + AssetPath);
 					} 
 				}
 			}
