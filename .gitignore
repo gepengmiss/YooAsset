@@ -18,8 +18,9 @@
 /yoo/ 
 /Assets/StreamingAssets
 /Assets/StreamingAssets.meta
-/Assets/Samples
-/Assets/Samples.meta
+#/Assets/Samples
+#/Assets/Samples.meta
+#/Assets/Samples/*.meta
 /Packages
 /UserSettings
 

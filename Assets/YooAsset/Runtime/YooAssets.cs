@@ -8,6 +8,9 @@ namespace YooAsset
 {
 	public static partial class YooAssets
 	{
+		public static string DefaultPackage = "DefaultPackage";
+		public static string NewPackage = "NewPackage";
+
 		private static bool _isInitialize = false;
 		private static GameObject _driver = null;
 		private static readonly List<ResourcePackage> _packages = new List<ResourcePackage>();
