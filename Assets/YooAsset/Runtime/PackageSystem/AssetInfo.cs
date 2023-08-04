@@ -46,6 +46,11 @@ namespace YooAsset
 			}
 		}
 
+		internal PackageAsset GetPackageAsset()
+		{ 
+			return _packageAsset; 
+		}
+
 		/// <summary>
 		/// 可寻址地址
 		/// </summary>

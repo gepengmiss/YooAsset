@@ -17,6 +17,11 @@ namespace YooAsset
 		private AssetSystemImpl _assetSystemImpl;
 
 		/// <summary>
+		/// 包裹可用状态， 资源下完，或者不需要从网络下载时，可用
+		/// </summary>
+		public bool IsReady { set; get; }
+
+		/// <summary>
 		/// 包裹名
 		/// </summary>
 		public string PackageName { private set; get; }
@@ -1033,7 +1038,7 @@ namespace YooAsset
 			return _playModeServices.ActiveManifest.IsIncludeBundleFile(cacheGUID);
 		}
 
-		private AssetInfo ConvertLocationToAssetInfo(string location, System.Type assetType)
+		public AssetInfo ConvertLocationToAssetInfo(string location, System.Type assetType)
 		{
 			return _playModeServices.ActiveManifest.ConvertLocationToAssetInfo(location, assetType);
 		}

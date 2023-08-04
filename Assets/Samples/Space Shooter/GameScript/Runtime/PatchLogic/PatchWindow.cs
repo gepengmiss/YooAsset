@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UniFramework.Event;
 
-public class PatchWindow : MonoBehaviour
+public class PatchWindow : MonoBehaviour 
 {
 	/// <summary>
 	/// 对话框封装类
@@ -64,6 +64,8 @@ public class PatchWindow : MonoBehaviour
 
 	void Awake()
 	{
+		DontDestroyOnLoad(this.gameObject);
+		
 		_slider = transform.Find("UIWindow/Slider").GetComponent<Slider>();
 		_tips = transform.Find("UIWindow/Slider/txt_tips").GetComponent<Text>();
 		_tips.text = "Initializing the game world !";
@@ -77,6 +79,7 @@ public class PatchWindow : MonoBehaviour
 		_eventGroup.AddListener<PatchEventDefine.PackageVersionUpdateFailed>(OnHandleEventMessage);
 		_eventGroup.AddListener<PatchEventDefine.PatchManifestUpdateFailed>(OnHandleEventMessage);
 		_eventGroup.AddListener<PatchEventDefine.WebFileDownloadFailed>(OnHandleEventMessage);
+		_eventGroup.AddListener<PatchEventDefine.FoundUpdateFinish>(OnHandleEventMessage);
 	}
 	void OnDestroy()
 	{
@@ -88,6 +91,8 @@ public class PatchWindow : MonoBehaviour
 	/// </summary>
 	private void OnHandleEventMessage(IEventMessage message)
 	{
+		UnityEngine.Debug.LogError("OnHandleEventMessage======" + message);
+
 		if (message is PatchEventDefine.InitializeFailed)
 		{
 			System.Action callback = () =>
@@ -145,6 +150,18 @@ public class PatchWindow : MonoBehaviour
 				UserEventDefine.UserTryDownloadWebFiles.SendEventMessage();
 			};
 			ShowMessageBox($"Failed to download file : {msg.FileName}", callback);
+		}
+		else if (message is PatchEventDefine.FoundUpdateFinish)
+		{
+			var msg = message as PatchEventDefine.FoundUpdateFinish;
+			System.Action callback = () =>
+			{
+				UnityEngine.Debug.LogError("重新加载游戏======");
+				// 干掉现有场景，重新进入战斗场景
+				SceneEventDefine.ChangeToHomeScene.SendEventMessage();
+				// SceneEventDefine.ChangeToBattleScene.SendEventMessage();
+			}; 
+			ShowMessageBox($"更新完成，请重新进入游戏！", callback);
 		}
 		else
 		{

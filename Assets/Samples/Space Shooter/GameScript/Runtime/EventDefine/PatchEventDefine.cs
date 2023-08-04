@@ -47,6 +47,18 @@ public class PatchEventDefine
 	}
 
 	/// <summary>
+	/// 发现更新文件
+	/// </summary>
+	public class FoundUpdateFinish : IEventMessage
+	{ 
+		public static void SendEventMessage()
+		{
+			var msg = new FoundUpdateFinish(); 
+			UniEvent.SendMessage(msg);
+		}
+	}
+
+	/// <summary>
 	/// 下载进度更新
 	/// </summary>
 	public class DownloadProgressUpdate : IEventMessage

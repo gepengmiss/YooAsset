@@ -114,6 +114,7 @@ namespace YooAsset
 					while (_packageAssetCount > 0)
 					{
 						var packageAsset = new PackageAsset();
+						packageAsset.PackageName = Manifest.PackageName; 
 						packageAsset.Address = _buffer.ReadUTF8();
 						packageAsset.AssetPath = _buffer.ReadUTF8();
 						packageAsset.AssetGUID = _buffer.ReadUTF8();
@@ -121,7 +122,7 @@ namespace YooAsset
 						packageAsset.BundleID = _buffer.ReadInt32();
 						packageAsset.DependIDs = _buffer.ReadInt32Array();
 						Manifest.AssetList.Add(packageAsset);
-
+  
 						// 注意：我们不允许原始路径存在重名
 						string assetPath = packageAsset.AssetPath;
 						if (Manifest.AssetDic.ContainsKey(assetPath))

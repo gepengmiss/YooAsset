@@ -16,7 +16,7 @@ internal class FsmDownloadOver : IStateNode
 	}
 	void IStateNode.OnEnter()
 	{
-		_machine.ChangeState<FsmClearCache>();
+		_machine.ChangeState<FsmClearCache>();  
 	}
 	void IStateNode.OnUpdate()
 	{

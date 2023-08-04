@@ -124,6 +124,7 @@ namespace YooAsset
 				for (int i = 0; i < packageAssetCount; i++)
 				{
 					var packageAsset = new PackageAsset();
+					packageAsset.PackageName = manifest.PackageName; 
 					packageAsset.Address = buffer.ReadUTF8();
 					packageAsset.AssetPath = buffer.ReadUTF8();
 					packageAsset.AssetGUID = buffer.ReadUTF8();
@@ -131,6 +132,8 @@ namespace YooAsset
 					packageAsset.BundleID = buffer.ReadInt32();
 					packageAsset.DependIDs = buffer.ReadInt32Array();
 					manifest.AssetList.Add(packageAsset);
+
+					UnityEngine.Debug.LogError(packageAsset.PackageName + "  2222222222 ===============> AssetPath:" + packageAsset.AssetPath);
 				}
 
 				// 读取资源包列表

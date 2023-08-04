@@ -41,7 +41,7 @@ public class FsmCreateDownloader : IStateNode
 		{
 			Debug.Log("Not found any download files !");
 				
-			yield return new WaitForSecondsRealtime(10f);
+			yield return new WaitForSecondsRealtime(5f);
 
 			_machine.ChangeState<FsmDownloadOver>();
 		}

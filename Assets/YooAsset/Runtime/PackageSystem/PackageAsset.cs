@@ -7,6 +7,11 @@ namespace YooAsset
 	internal class PackageAsset
 	{
 		/// <summary>
+		/// 用于判断资源属于哪个package
+		/// </summary>
+		public string PackageName;
+
+		/// <summary>
 		/// 可寻址地址
 		/// </summary>
 		public string Address;
