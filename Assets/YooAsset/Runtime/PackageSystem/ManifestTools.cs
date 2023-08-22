@@ -133,7 +133,7 @@ namespace YooAsset
 					packageAsset.DependIDs = buffer.ReadInt32Array();
 					manifest.AssetList.Add(packageAsset);
 
-					UnityEngine.Debug.LogError(packageAsset.PackageName + "  2222222222 ===============> AssetPath:" + packageAsset.AssetPath);
+					// UnityEngine.Debug.LogError(packageAsset.PackageName + "  2222222222 ===============> AssetPath:" + packageAsset.AssetPath);
 				}
 
 				// 读取资源包列表

@@ -4,20 +4,26 @@ using UnityEditor;
 #if UNITY_EDITOR
 using UnityEditor.Build;
 using UnityEditor.Rendering;
+#if UNITY_2019_4_OR_NEWER
+using UnityEditor.Build.Pipeline.Utilities;
+#endif
 #endif
 using UnityEngine;
 using System.Linq;
 using System.Text;
 using ShaderVariant = UnityEngine.ShaderVariantCollection.ShaderVariant;
 
-//增量打包时已经打包的Shader不会触发该回调，只有新打包的Shader才会。不管是Addressable打包或者是其他的打包方式都类似。
-//如果需要通过IPreprocessShaders来进行Shader变体剔除，那么还是建议重新全量打包一次，或者打包时设置ForceRebuild。
- 
+// 增量打包时已经打包的Shader不会触发该回调，只有新打包的Shader才会。不管是Addressable打包或者是其他的打包方式都类似。
+// 如果需要通过IPreprocessShaders来进行Shader变体剔除，那么还是建议重新全量打包一次，或者打包时设置ForceRebuild。
+// 实现 IPreprocessShaders 接口的类有VersionedCallbackAttribute 属性, 修改version更新sbp的hash，跳过打包缓存。
 namespace Soco.ShaderVariantsStripper
 {
 #if UNITY_EDITOR
+#if UNITY_2019_4_OR_NEWER
+    [VersionedCallback(1.2f)]
+#endif
     public class ShaderVariantsStripperCode : IPreprocessShaders
-    {
+    { 
         public static StringBuilder sbCache = new StringBuilder();
         public static StringBuilder sb = new StringBuilder();
         public int callbackOrder { get { return 0; } }

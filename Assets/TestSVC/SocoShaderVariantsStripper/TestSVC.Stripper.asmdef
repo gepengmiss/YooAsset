@@ -2,7 +2,8 @@
     "name": "TestSVC.Stripper",
     "rootNamespace": "",
     "references": [
-        "GUID:9da439af6e0d07a49bb3dc55c1f048bb"
+        "GUID:9da439af6e0d07a49bb3dc55c1f048bb",
+        "GUID:c5ecc461727906345a35491a0440694f"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
