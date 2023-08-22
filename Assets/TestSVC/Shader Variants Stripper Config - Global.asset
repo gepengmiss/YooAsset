@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7b02c73d234c64895031f837366d25, type: 3}
+  m_Name: Shader Variants Stripper Config - Global
+  m_EditorClassIdentifier: 
+  mEnable: 1
+  mGlobalConditions:
+  - condition:
+      rid: 1955798454380789770
+    strip: 1
+    priority: 0
+  - condition:
+      rid: 1955798454380789771
+    strip: 1
+    priority: 1
+  mShaderConditions:
+    _keys:
+    - {fileID: 4800000, guid: e1f5153da774c754aa283cf23fd64d56, type: 3}
+    _values:
+    - applyGlobalConfig: 1
+      conditionPairs: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 1955798454380789770
+      type: {class: ShaderVariantsStripperConditionPassTypeIs, ns: Soco.ShaderVariantsStripper, asm: Assembly-CSharp}
+      data:
+        passType: 10
+    - rid: 1955798454380789771
+      type: {class: ShaderVariantsStripperConditionHasKeywordCombination, ns: Soco.ShaderVariantsStripper, asm: Assembly-CSharp}
+      data:
+        include: 1
+        keywords:
+        - FOG_EXP
+        constraintPassType: 0
+        passType: 1

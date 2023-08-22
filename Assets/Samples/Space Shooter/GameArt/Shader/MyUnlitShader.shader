@@ -1,5 +1,9 @@
 Shader "Unlit/MyUnlitShader"
-{
+{    
+
+
+
+
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
@@ -16,6 +20,9 @@ Shader "Unlit/MyUnlitShader"
             #pragma fragment frag
             // make fog work
             #pragma multi_compile_fog
+            #pragma shader_feature _ALPHATEST_ON
+            #pragma shader_feature _ALPHAPREMULTIPLY_ON
+            #pragma multi_compile _ USE_SHADOW_MASK
 
             #include "UnityCG.cginc"
 
@@ -41,6 +48,16 @@ Shader "Unlit/MyUnlitShader"
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
                 UNITY_TRANSFER_FOG(o,o.vertex);
+               
+#ifdef USE_SHADOW_MASK
+ 
+#endif
+#ifdef _ALPHATEST_ON
+ 
+#endif
+#ifdef _ALPHAPREMULTIPLY_ON
+
+#endif
                 return o;
             }
 

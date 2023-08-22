@@ -1,0 +1,407 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UnityBuildResultSVC
+  m_Shaders:
+  - first: {fileID: 66, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: DIRECTIONAL
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+          _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL FOG_EXP2 _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL LIGHTPROBE_SH _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL SHADOWS_SCREEN _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL VERTEXLIGHT_ON
+        passType: 4
+      - keywords: DIRECTIONAL VERTEXLIGHT_ON _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL _EMISSION
+        passType: 4
+      - keywords: DIRECTIONAL _EMISSION _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 4
+      - keywords: DIRECTIONAL
+        passType: 5
+      - keywords: DIRECTIONAL FOG_EXP2
+        passType: 5
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN
+        passType: 5
+      - keywords: DIRECTIONAL FOG_EXP2 SHADOWS_SCREEN _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL FOG_EXP2 _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL SHADOWS_SCREEN
+        passType: 5
+      - keywords: DIRECTIONAL SHADOWS_SCREEN _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE FOG_EXP2
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE FOG_EXP2 SHADOWS_SCREEN
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE FOG_EXP2 SHADOWS_SCREEN _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE FOG_EXP2 _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE SHADOWS_SCREEN
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE SHADOWS_SCREEN _NORMALMAP
+        passType: 5
+      - keywords: DIRECTIONAL_COOKIE _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT
+        passType: 5
+      - keywords: FOG_EXP2 POINT SHADOWS_CUBE
+        passType: 5
+      - keywords: FOG_EXP2 POINT SHADOWS_CUBE SHADOWS_SOFT
+        passType: 5
+      - keywords: FOG_EXP2 POINT SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT SHADOWS_CUBE _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE SHADOWS_CUBE
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE SHADOWS_CUBE _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 POINT_COOKIE _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 SHADOWS_DEPTH SHADOWS_SOFT SPOT
+        passType: 5
+      - keywords: FOG_EXP2 SHADOWS_DEPTH SHADOWS_SOFT SPOT _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 SHADOWS_DEPTH SPOT
+        passType: 5
+      - keywords: FOG_EXP2 SHADOWS_DEPTH SPOT _NORMALMAP
+        passType: 5
+      - keywords: FOG_EXP2 SPOT
+        passType: 5
+      - keywords: FOG_EXP2 SPOT _NORMALMAP
+        passType: 5
+      - keywords: POINT
+        passType: 5
+      - keywords: POINT SHADOWS_CUBE
+        passType: 5
+      - keywords: POINT SHADOWS_CUBE SHADOWS_SOFT
+        passType: 5
+      - keywords: POINT SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP
+        passType: 5
+      - keywords: POINT SHADOWS_CUBE _NORMALMAP
+        passType: 5
+      - keywords: POINT _NORMALMAP
+        passType: 5
+      - keywords: POINT_COOKIE
+        passType: 5
+      - keywords: POINT_COOKIE SHADOWS_CUBE
+        passType: 5
+      - keywords: POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT
+        passType: 5
+      - keywords: POINT_COOKIE SHADOWS_CUBE SHADOWS_SOFT _NORMALMAP
+        passType: 5
+      - keywords: POINT_COOKIE SHADOWS_CUBE _NORMALMAP
+        passType: 5
+      - keywords: POINT_COOKIE _NORMALMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT
+        passType: 5
+      - keywords: SHADOWS_DEPTH SHADOWS_SOFT SPOT _NORMALMAP
+        passType: 5
+      - keywords: SHADOWS_DEPTH SPOT
+        passType: 5
+      - keywords: SHADOWS_DEPTH SPOT _NORMALMAP
+        passType: 5
+      - keywords: SPOT
+        passType: 5
+      - keywords: SPOT _NORMALMAP
+        passType: 5
+      - keywords: SHADOWS_CUBE
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+      - keywords: 
+        passType: 10
+      - keywords: LIGHTPROBE_SH
+        passType: 10
+      - keywords: LIGHTPROBE_SH UNITY_HDR_ON
+        passType: 10
+      - keywords: LIGHTPROBE_SH UNITY_HDR_ON _EMISSION
+        passType: 10
+      - keywords: LIGHTPROBE_SH UNITY_HDR_ON _EMISSION _NORMALMAP
+        passType: 10
+      - keywords: LIGHTPROBE_SH UNITY_HDR_ON _NORMALMAP
+        passType: 10
+      - keywords: LIGHTPROBE_SH _EMISSION
+        passType: 10
+      - keywords: LIGHTPROBE_SH _EMISSION _NORMALMAP
+        passType: 10
+      - keywords: LIGHTPROBE_SH _NORMALMAP
+        passType: 10
+      - keywords: UNITY_HDR_ON
+        passType: 10
+      - keywords: UNITY_HDR_ON _EMISSION
+        passType: 10
+      - keywords: UNITY_HDR_ON _EMISSION _NORMALMAP
+        passType: 10
+      - keywords: UNITY_HDR_ON _NORMALMAP
+        passType: 10
+      - keywords: _EMISSION
+        passType: 10
+      - keywords: _EMISSION _NORMALMAP
+        passType: 10
+      - keywords: _NORMALMAP
+        passType: 10
+  - first: {fileID: 6, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+      - keywords: FOG_EXP2
+        passType: 1
+      - keywords: FOG_EXP2 POINT
+        passType: 1
+      - keywords: FOG_EXP2 SPOT
+        passType: 1
+      - keywords: POINT
+        passType: 1
+      - keywords: SPOT
+        passType: 1
+      - keywords: 
+        passType: 2
+      - keywords: FOG_EXP2
+        passType: 2
+      - keywords: SHADOWS_CUBE
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: _SUNDISK_HIGH_QUALITY
+        passType: 0
+      - keywords: _SUNDISK_NONE
+        passType: 0
+      - keywords: _SUNDISK_SIMPLE
+        passType: 0
+  - first: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 SOFTPARTICLES_ON
+        passType: 0
+      - keywords: SOFTPARTICLES_ON
+        passType: 0
+  - first: {fileID: 9000, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9001, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9002, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9003, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9004, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+  - first: {fileID: 10701, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+      - keywords: FOG_EXP2
+        passType: 1
+      - keywords: FOG_EXP2 POINT
+        passType: 1
+      - keywords: FOG_EXP2 SPOT
+        passType: 1
+      - keywords: POINT
+        passType: 1
+      - keywords: SPOT
+        passType: 1
+      - keywords: 
+        passType: 2
+      - keywords: FOG_EXP2
+        passType: 2
+      - keywords: SHADOWS_CUBE
+        passType: 8
+      - keywords: SHADOWS_DEPTH
+        passType: 8
+  - first: {fileID: 10720, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+  - first: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+  - first: {fileID: 4800000, guid: ba67c8b1d5e59dc428ad9fc9270f8353, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 1
+      - keywords: FOG_EXP2
+        passType: 1
+      - keywords: 
+        passType: 2
+      - keywords: FOG_EXP2
+        passType: 2
+      - keywords: 
+        passType: 3
+      - keywords: FOG_EXP2
+        passType: 3
+  - first: {fileID: 4800000, guid: e1f5153da774c754aa283cf23fd64d56, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHATEST_ON
+        passType: 0
+      - keywords: USE_SHADOW_MASK
+        passType: 0
+      - keywords: USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: _ALPHATEST_ON
+        passType: 0

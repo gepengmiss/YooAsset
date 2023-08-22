@@ -22,26 +22,26 @@ ShaderVariantCollection:
           _EMISSION
         passType: 4
       - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN SHADOWS_SPLIT_SPHERES
-          _NORMALMAP
+          _EMISSION _NORMALMAP
         passType: 4
       - keywords: DIRECTIONAL LIGHTPROBE_SH SHADOWS_SCREEN SHADOWS_SPLIT_SPHERES
-          _EMISSION _NORMALMAP
+          _NORMALMAP
         passType: 4
       - keywords: 
         passType: 8
       - keywords: SHADOWS_DEPTH SHADOWS_SPLIT_SPHERES
         passType: 8
-      - keywords: _EMISSION
-        passType: 8
       - keywords: SHADOWS_DEPTH SHADOWS_SPLIT_SPHERES _EMISSION
         passType: 8
-      - keywords: _NORMALMAP
+      - keywords: SHADOWS_DEPTH SHADOWS_SPLIT_SPHERES _EMISSION _NORMALMAP
         passType: 8
       - keywords: SHADOWS_DEPTH SHADOWS_SPLIT_SPHERES _NORMALMAP
         passType: 8
+      - keywords: _EMISSION
+        passType: 8
       - keywords: _EMISSION _NORMALMAP
         passType: 8
-      - keywords: SHADOWS_DEPTH SHADOWS_SPLIT_SPHERES _EMISSION _NORMALMAP
+      - keywords: _NORMALMAP
         passType: 8
   - first: {fileID: 106, guid: 0000000000000000f000000000000000, type: 0}
     second:
@@ -78,11 +78,6 @@ ShaderVariantCollection:
       variants:
       - keywords: 
         passType: 0
-  - first: {fileID: 9006, guid: 0000000000000000f000000000000000, type: 0}
-    second:
-      variants:
-      - keywords: 
-        passType: 0
   - first: {fileID: 9007, guid: 0000000000000000f000000000000000, type: 0}
     second:
       variants:
@@ -97,4 +92,9 @@ ShaderVariantCollection:
     second:
       variants:
       - keywords: SHADOWS_SCREEN SHADOWS_SPLIT_SPHERES
+        passType: 0
+  - first: {fileID: 9006, guid: 0000000000000000f000000000000000, type: 0}
+    second:
+      variants:
+      - keywords: 
         passType: 0

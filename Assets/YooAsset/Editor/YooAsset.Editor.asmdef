@@ -4,7 +4,9 @@
     "references": [
         "YooAsset",
         "Unity.ScriptableBuildPipeline",
-        "Unity.ScriptableBuildPipeline.Editor"
+        "Unity.ScriptableBuildPipeline.Editor",
+        "TestSVC.Tool2",
+        "TestSVC.Stripper"
     ],
     "includePlatforms": [
         "Editor"

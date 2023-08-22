@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6575075691513610643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1ba0a3d49cea8e419e40cc4ca663caf, type: 3}
+  m_Name: VariantKeywordCombination
+  m_EditorClassIdentifier: 
+  mShader: {fileID: 4800000, guid: e1f5153da774c754aa283cf23fd64d56, type: 3}
+  mKeywordDeclareGroups:
+  - keywords:
+    - _
+    - FOG_EXP2
+  - keywords:
+    - _
+    - USE_SHADOW_MASK
+--- !u!114 &-2225073900752278901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931fd01e59b63c04e800037eb4abe451, type: 3}
+  m_Name: MaterialCollection_ProjectDependRes
+  m_EditorClassIdentifier: 
+  packageName: DefaultPackage
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2316dd8b881fb4b948df0bcef7dce9, type: 3}
+  m_Name: New Shader Variant Collection Tool Config
+  m_EditorClassIdentifier: 
+  mKeys:
+  - Soco.ShaderVariantsCollection.IMaterialCollector, TestSVC.Collection, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Soco.ShaderVariantsCollection.IMaterialFilter, TestSVC.Collection, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Soco.ShaderVariantsCollection.IVariantFilter, TestSVC.Collection, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  - Soco.ShaderVariantsCollection.IExecutable, TestSVC.Collection, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  mValues:
+  - list:
+    - obj: {fileID: -2225073900752278901}
+      use: 0
+    - obj: {fileID: 8991897030595772989}
+      use: 1
+  - list: []
+  - list:
+    - obj: {fileID: 3939316355386545524}
+      use: 1
+  - list:
+    - obj: {fileID: -6575075691513610643}
+      use: 1
+--- !u!114 &3939316355386545524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75b1e0364b4f8741afd80328573efa2, type: 3}
+  m_Name: VariantFilter_PassStrip
+  m_EditorClassIdentifier: 
+  mStripPasses: 0a0000000f000000
+--- !u!114 &8991897030595772989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7291da11d985406499df5f7da7f07c3a, type: 3}
+  m_Name: MaterialCollection_TotalMaterial
+  m_EditorClassIdentifier: 
+  pathMode: 1
+  mIncludePath:
+  - Assets
+  - Packages
+  mFolders: []

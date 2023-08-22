@@ -1,0 +1,796 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!200 &20000000
+ShaderVariantCollection:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AllShaderVariants
+  m_Shaders:
+  - first: {fileID: 4800000, guid: ba67c8b1d5e59dc428ad9fc9270f8353, type: 3}
+    second:
+      variants:
+      - keywords: 
+        passType: 2
+      - keywords: COLOR_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+          PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_MASK_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON DETAIL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON FOG_EXP2
+        passType: 2
+      - keywords: COLOR_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON NORMAL_ON
+        passType: 2
+      - keywords: COLOR_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: COLOR_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON DETAIL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_MASK_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_MASK_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON FOG_EXP2
+        passType: 2
+      - keywords: DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON NORMAL_ON
+        passType: 2
+      - keywords: DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: DETAIL_ON PHONG_ON
+        passType: 2
+      - keywords: EMISSION_ON
+        passType: 2
+      - keywords: EMISSION_ON FOG_EXP2
+        passType: 2
+      - keywords: EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: EMISSION_ON NORMAL_ON
+        passType: 2
+      - keywords: EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: EMISSION_ON PHONG_ON
+        passType: 2
+      - keywords: FOG_EXP2
+        passType: 2
+      - keywords: FOG_EXP2 NORMAL_ON
+        passType: 2
+      - keywords: FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: FOG_EXP2 PHONG_ON
+        passType: 2
+      - keywords: NORMAL_ON
+        passType: 2
+      - keywords: NORMAL_ON PHONG_ON
+        passType: 2
+      - keywords: PHONG_ON
+        passType: 2
+      - keywords: 
+        passType: 3
+      - keywords: COLOR_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+          PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON DETAIL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_MASK_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON DETAIL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON FOG_EXP2
+        passType: 3
+      - keywords: COLOR_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON NORMAL_ON
+        passType: 3
+      - keywords: COLOR_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: COLOR_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON DETAIL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_MASK_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_MASK_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON FOG_EXP2
+        passType: 3
+      - keywords: DETAIL_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON NORMAL_ON
+        passType: 3
+      - keywords: DETAIL_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: DETAIL_ON PHONG_ON
+        passType: 3
+      - keywords: EMISSION_ON
+        passType: 3
+      - keywords: EMISSION_ON FOG_EXP2
+        passType: 3
+      - keywords: EMISSION_ON FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: EMISSION_ON FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: EMISSION_ON FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: EMISSION_ON NORMAL_ON
+        passType: 3
+      - keywords: EMISSION_ON NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: EMISSION_ON PHONG_ON
+        passType: 3
+      - keywords: FOG_EXP2
+        passType: 3
+      - keywords: FOG_EXP2 NORMAL_ON
+        passType: 3
+      - keywords: FOG_EXP2 NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: FOG_EXP2 PHONG_ON
+        passType: 3
+      - keywords: NORMAL_ON
+        passType: 3
+      - keywords: NORMAL_ON PHONG_ON
+        passType: 3
+      - keywords: PHONG_ON
+        passType: 3
+  - first: {fileID: 4800000, guid: e1f5153da774c754aa283cf23fd64d56, type: 3}
+    second:
+      variants:
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHATEST_ON
+        passType: 0
+      - keywords: USE_SHADOW_MASK
+        passType: 0
+      - keywords: USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: USE_SHADOW_MASK _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: USE_SHADOW_MASK _ALPHATEST_ON
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON _ALPHATEST_ON
+        passType: 0
+      - keywords: _ALPHATEST_ON
+        passType: 0
+  - first: {fileID: 4800000, guid: 56f20dab9147ce345a67d3996afd5a05, type: 3}
+    second:
+      variants:
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK2
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK2
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHATEST_ON2
+        passType: 0
+      - keywords: USE_SHADOW_MASK2
+        passType: 0
+      - keywords: USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: USE_SHADOW_MASK2 _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: USE_SHADOW_MASK2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON2
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON2 _ALPHATEST_ON2
+        passType: 0
+      - keywords: _ALPHATEST_ON2
+        passType: 0
+  - first: {fileID: 4800000, guid: e4e2b46f7336d82468feed81c99e1941, type: 3}
+    second:
+      variants:
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+  - first: {fileID: 4800000, guid: bec96b6e3034369468d1cc9ef9bd50a2, type: 3}
+    second:
+      variants:
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK3
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK3
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK3
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHATEST_ON3
+        passType: 0
+      - keywords: USE_SHADOW_MASK3
+        passType: 0
+      - keywords: USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: USE_SHADOW_MASK3 _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: USE_SHADOW_MASK3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON3
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON3 _ALPHATEST_ON3
+        passType: 0
+      - keywords: _ALPHATEST_ON3
+        passType: 0
+  - first: {fileID: 4800000, guid: ef0e3d74e29c295479b603c1b25dbdb4, type: 3}
+    second:
+      variants:
+      - keywords: FOG_EXP
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK4
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP USE_SHADOW_MASK4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_EXP _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP2
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK4
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP2 USE_SHADOW_MASK4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_EXP2 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_LINEAR
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK4
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_LINEAR USE_SHADOW_MASK4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: FOG_LINEAR _ALPHATEST_ON4
+        passType: 0
+      - keywords: USE_SHADOW_MASK4
+        passType: 0
+      - keywords: USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: USE_SHADOW_MASK4 _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: USE_SHADOW_MASK4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON4
+        passType: 0
+      - keywords: _ALPHAPREMULTIPLY_ON4 _ALPHATEST_ON4
+        passType: 0
+      - keywords: _ALPHATEST_ON4
+        passType: 0

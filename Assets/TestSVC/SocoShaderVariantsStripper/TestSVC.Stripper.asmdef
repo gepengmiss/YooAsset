@@ -1,0 +1,16 @@
+{
+    "name": "TestSVC.Stripper",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9da439af6e0d07a49bb3dc55c1f048bb"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
